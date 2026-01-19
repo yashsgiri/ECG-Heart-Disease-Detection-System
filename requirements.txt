@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+matplotlib
+tkinter
+reportlab
+scikit-learn
+pyserial
