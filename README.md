@@ -91,3 +91,24 @@ The model is trained using extracted ECG features and rule-based auto-labeling t
 
 ## 📂 Project Structure
 
+ECG-Heart-Disease-Detection-System/
+│
+├── data/ # ECG CSV / Excel data files
+├── models/ # Trained ML model (.pkl)
+├── reports/ # Generated ECG PDF reports
+├── src/ # Main Python application
+│ └── ecg_main_app.py
+│
+├── README.md
+└── requirements.txt
+
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+
+python src/ecg_main_app.py
