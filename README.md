@@ -1,93 +1,93 @@
-📌 Project Overview
+# ECG Heart Disease Detection System  
+**Real-Time ECG Analysis using Signal Processing and Machine Learning**
 
-This project presents a real-time ECG-based heart disease detection system developed using Python, signal processing techniques, and machine learning. The system acquires ECG signals from a patient using a hardware sensor setup, processes the signals in real time, extracts clinically relevant features, and classifies the ECG as Normal or Abnormal. A detailed PDF medical report is generated for further analysis.
+---
 
-The project focuses on practical implementation, combining hardware integration, ECG signal analysis, and ML-based classification.
+## 📌 Project Overview
 
-🧠 Motivation
+This project implements a **real-time ECG-based heart disease detection system** using **Python, signal processing, and machine learning**.  
+The system acquires ECG signals from a patient through a sensor and Arduino-based setup, preprocesses the signals, extracts clinically relevant features, and classifies the ECG as **Normal** or **Abnormal**.  
+A detailed **PDF medical report** is automatically generated for analysis.
 
-Cardiovascular diseases are one of the leading causes of mortality worldwide. Early detection using ECG signals can significantly improve diagnosis and treatment outcomes. This project aims to demonstrate how real-time ECG signals can be analyzed and classified using machine learning, making cardiac screening more accessible and automated.
+This project focuses on **practical implementation**, integrating hardware, signal processing, and ML techniques.
 
-🏗️ System Architecture
+---
 
-Workflow:
+## 🎯 Objectives
 
-ECG signal acquisition from patient using ECG sensor
+- Acquire real-time ECG signals using hardware sensors  
+- Preprocess ECG signals to remove noise  
+- Extract heart rate and HRV features  
+- Classify ECG signals using machine learning  
+- Generate automated ECG analysis reports  
 
-Analog ECG signal transmission to Arduino Uno
+---
 
-Conversion to digital signal and transfer to PC
+## 🏗️ System Architecture
 
-ECG signal preprocessing and noise filtering
+**Workflow:**
 
-Feature extraction (Heart Rate & HRV metrics)
+1. ECG signal acquisition from patient  
+2. Analog signal transmission to Arduino Uno  
+3. Digital signal transfer to PC via serial communication  
+4. ECG preprocessing and noise filtering  
+5. Feature extraction (Heart Rate & HRV)  
+6. Machine learning–based classification  
+7. Automated PDF report generation  
 
-Machine Learning–based classification
+*(Architecture diagram can be added here in future)*
 
-Automated PDF report generation
+---
 
-⚙️ Hardware Components
+## ⚙️ Hardware Components
 
-ECG Sensor Module (ADS8230 / ADS8231 / AD8232 compatible)
+- ECG Sensor Module (AD8232 / ADS8230 / ADS8231 compatible)  
+- Arduino Uno  
+- ECG Electrodes  
+- USB Serial Communication  
 
-Arduino Uno
+---
 
-USB Serial Communication
+## 🧪 Software & Technologies Used
 
-ECG Electrodes
+- **Programming Language:** Python  
+- **Signal Processing:** NumPy, SciPy  
+- **Machine Learning:** Scikit-learn (Random Forest)  
+- **Data Handling:** Pandas  
+- **Visualization:** Matplotlib  
+- **GUI:** Tkinter  
+- **Report Generation:** ReportLab  
+- **Hardware Communication:** PySerial  
 
-🧪 Software & Technologies Used
+---
 
-Programming Language: Python
+## 🔍 Key Features
 
-Signal Processing: NumPy, SciPy
+- Real-time ECG signal acquisition  
+- ECG signal preprocessing using bandpass filtering  
+- R-peak detection and heart rate calculation  
+- Heart Rate Variability (HRV) feature extraction:
+  - Beats Per Minute (BPM)
+  - SDNN
+  - RMSSD
+- Automatic ECG labeling based on clinical thresholds  
+- Machine learning–based ECG classification  
+- GUI-based ECG visualization  
+- Automated PDF ECG report generation  
 
-Machine Learning: Scikit-learn (Random Forest)
+---
 
-Data Handling: Pandas
+## 🤖 Machine Learning Approach
 
-Visualization: Matplotlib
+- **Model Used:** Random Forest Classifier  
+- **Input Features:** Heart rate and HRV metrics  
+- **Classification Task:**  
+  - Normal ECG  
+  - Abnormal ECG  
 
-GUI: Tkinter
+The model is trained using extracted ECG features and rule-based auto-labeling to perform supervised learning.
 
-Report Generation: ReportLab
+---
 
-Hardware Communication: PySerial
+## 📂 Project Structure
 
-🔍 Key Features
-
-Real-time ECG signal acquisition via Arduino
-
-ECG signal preprocessing using bandpass filtering
-
-Peak detection for heart rate calculation
-
-Heart Rate Variability (HRV) feature extraction:
-
-BPM (Beats Per Minute)
-
-SDNN
-
-RMSSD
-
-Automatic ECG labeling based on clinical thresholds
-
-Machine Learning–based ECG classification
-
-GUI-based ECG visualization
-
-Automated PDF report generation
-
-🤖 Machine Learning Approach
-
-Model Used: Random Forest Classifier
-
-Features: Heart rate and HRV metrics
-
-Classification Task:
-
-Normal ECG
-
-Abnormal ECG
-
-The ML model is trained using extracted ECG features and rule-based auto-labeling for supervised learning.
